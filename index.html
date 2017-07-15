@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+<title>Ally Front-End Development Coding Challenge</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8">
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+	<div id="main" class="container">
+		<header>
+		<div class="logo left">
+			<div class="header_menuItem">
+				<img src="assets/img/urbank.png" alt="Ally Bank" /> <a href="#"
+					class="right margin_left10 marigin_rigt45">Contact</a> <a href="#"
+					class="right margin_left10">Service</a> <a href="#"
+					class="right margin_left10 selected_menuItem">Company</a> <a
+					href="#" class="right margin_left10">Employee</a> <a href="#"
+					class="right margin_left10">Home</a>
+			</div>
+		</div>
+		</header>
+		<div class="ally_mainContent_leftsection">
+			<div class="bestBank_ever">
+				<span class="bestBank_ever_text purpleColor" aria-labelledby="Best Bank Ever"> Best Bank Ever!</span>
+				<p class="checkout_text">The Most Amazing Smartphone Apps and
+					Mobile Features even scan your credit card to add your billing info
+					and pay right from your phone. This rise in smartphone ownership
+					means that more and more people are going online to find
+					information on a mobile device.</p>
+
+			</div>
+			<div class="list_content">
+				<span class="large_text" aria-labelledby="Reason We're Awesome">Reason We're Awesome:</span>
+				<ul>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Aliquam tincidunt mauris eu risus.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Aliquam tincidunt mauris eu risus.</li>
+
+
+				</ul>
+			</div>
+			<div>
+
+				<div class="mobileInfo_section">
+					<div class="mobile_left">
+						<span class="amazing_text purpleColor"> Amazing mobile info</span>
+						<p class="checkout_text">The Most Amazing Smartphone Apps and
+							Mobile Features even scan your credit card to add your billing
+							info and pay right from your phone. This rise in smartphone
+							ownership means that more and more people are going online to
+							find information on a mobile device.</p>
+					</div>
+					<img src="assets/img/iphone.png" class="left mobile_logo"
+						alt="mobile logo" />
+				</div>
+				<div class="rates_section">
+					<span class="rate_text">Rates |</span> <span class="checkout1_text">Check
+						them out.</span>
+				</div>
+				<div id="allyDynamicTable"
+					class="ally_mainContent_leftsectionContent left">
+					<table id="allyBankFinancialCenter_details" aria-describedby="Ally Sample Test">
+					 <caption>Ally BANK Account Table Summary</caption>
+						<tr>
+							<th>URBank</th>
+							<th>0.87%</th>
+							<th>$436.89</th>
+						</tr>
+					</table>
+					<script id="allyTableTemplate" type="text/x-jquery-tmpl">
+				<tr>
+					<td>${name}</td>
+					<td>${apy}</td>
+					<td>${earnings}</td>
+				</tr>
+			   </script>
+				</div>
+
+
+				<div class="ally_mainContent_rightsection left">
+					<div class="loginBtn">
+						<button type="button"
+							onclick="document.getElementById('id01').style.display='block'"
+							class="ally_loginBtn"  tabindex="0" name="LoginButton" alt="Login" aria-describedby="LoginButon" aria-label="Login" >Login</button>
+					</div>
+					<div class="ally_sampleTab">
+						<div id="tabs-container">
+							<ul class="tabs-menu">
+								<li class="current"><a href="#tab-1">News</a>
+								</li>
+								<li><a href="#tab-2">Archive</a>
+								</li>
+							</ul>
+							<div class="tab">
+								<div id="tab-1" class="tab-content"  tabindex="0" >
+									<div class="tab_content_item">
+										<p class="tab_heading" aria-labelledby="Lorem ipsum dolor">Lorem ipsum dolor</p>
+										<p class="tab_context">Welcome to Alley. More than a
+											Workspace. START YOUR JOURNEY. Close Modal.</p>
+									</div>
+									<div class="tab_content_item">
+										<p class="tab_heading">Lorem ipsum dolor</p>
+										<p class="tab_context">Welcome to Alley. More than a
+											Workspace. START YOUR JOURNEY. Close Modal.</p>
+									</div>
+									<div class="tab_content_item">
+										<p class="tab_heading">Lorem ipsum dolor</p>
+										<p class="tab_context">Welcome to Alley. More than a
+											Workspace. START YOUR JOURNEY. Close Modal.</p>
+									</div>
+								</div>
+								<div id="tab-2" class="tab-content"  tabindex="0" >
+									<div class="tab_content_item">
+										<p class="tab_heading">Lorem ipsum dolor</p>
+										<p class="tab_context">Welcome to Alley. More than a
+											Workspace. START YOUR JOURNEY. Close Modal.</p>
+									</div>
+									<div class="tab_content_item">
+										<p class="tab_heading">Lorem ipsum dolor</p>
+										<p class="tab_context">Welcome to Alley. More than a
+											Workspace. START YOUR JOURNEY. Close Modal.</p>
+									</div>
+									<div class="tab_content_item">
+										<p class="tab_heading">Lorem ipsum dolor</p>
+										<p class="tab_context">Welcome to Alley. More than a
+											Workspace. START YOUR JOURNEY. Close Modal.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="id01" class="modal">
+			<form class="modal-content animate" action="#">
+				<div class="imgcontainer">
+					<span
+						onclick="document.getElementById('id01').style.display='none'"
+						class="close" title="Close Modal" aria-describedby="closeButon" aria-label="close" >&times;</span>
+				</div>
+				<div class="container_login">
+					<label for="Username"><b>Username</b> </label> <input type="text"
+						placeholder="Enter Username" name="uname" id="Username" required> <label for="password"><b>Password</b>
+					</label> <input type="password" placeholder="Enter Password" id="password" name="psw"
+						required>
+
+					<button  tabindex="0" type="submit" name="loginbutton" alt="Login">Login</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="mainContainer width100 clear">
+			<footer class="ally_footer_content">
+			<div class="footer_sectionItems">
+				<a href="#" class="left margin_left10">&copy; 2017 URBank</a> <a
+					href="#" class="right margin_left10 marigin_rigt45">Contact</a> <a
+					href="#" class="right margin_left10">Service</a> <a href="#"
+					class="right margin_left10">Company</a> <a href="#"
+					class="right margin_left10">Employee</a> <a href="#"
+					class="right margin_left10">Home</a>
+			</div>
+			</footer>
+		</div>
+		<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.tmpl.js"></script>
+		<script type="text/javascript" src="assets/js/ally.js"></script>
+</body>
+</html>
